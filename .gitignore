@@ -1,0 +1,10 @@
+*.pof
+*.sof
+*.txt
+*.rpt
+*.done
+*.eqn
+*.summary
+*.pin
+**/db/
+**/simulation/
