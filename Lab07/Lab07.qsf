@@ -14,7 +14,7 @@
 
 
 # The default values for assignments are stored in the file
-#		Lab05_assignment_defaults.qdf
+#		Lab07_assignment_defaults.qdf
 # If this file doesn't exist, and for assignments not listed, see file
 #		assignment_defaults.qdf
 
@@ -26,24 +26,27 @@
 # Project-Wide Assignments
 # ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 5.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:14:15  MARCH 17, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:49:02  MARCH 24, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 5.0
-set_global_assignment -name BDF_FILE JK_RS_sch.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE JK_RS_sch_wf.vwf
-set_global_assignment -name VHDL_FILE JK_RS.vhd
-set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE Lab05.sim.tbl
-set_global_assignment -name BDF_FILE TRS_sch.bdf
-set_global_assignment -name VHDL_FILE TRS.vhd
-set_global_assignment -name BDF_FILE JK4B.bdf
-set_global_assignment -name VHDL_FILE JK_4B.vhd
-set_global_assignment -name BDF_FILE top.bdf
-set_global_assignment -name BDF_FILE top7493.bdf
+set_global_assignment -name BSF_FILE ../Lab06/DEMUL3_8_sch.bsf
+set_global_assignment -name BDF_FILE ../Lab06/DEMUL3_8_sch.bdf
+set_global_assignment -name BDF_FILE enc_8_3_sch.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE wv.vwf
+set_global_assignment -name BDF_FILE enc_16_4_sch.bdf
+set_global_assignment -name BDF_FILE enc_64_6_sch.bdf
+set_global_assignment -name VHDL_FILE enc8x3.vhd
+set_global_assignment -name VHDL_FILE enc16x4.vhd
+set_global_assignment -name VERILOG_FILE enc64x6.v
+set_global_assignment -name VHDL_FILE enc64x6.vhd
+set_global_assignment -name BDF_FILE ../Lab06/Vector88.bdf
+set_global_assignment -name BDF_FILE Vector8_8.bdf
+set_global_assignment -name VHDL_FILE pointer16_16.vhd
 
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name FAMILY Stratix
-set_global_assignment -name TOP_LEVEL_ENTITY JK_RS
+set_global_assignment -name TOP_LEVEL_ENTITY enc_8_3_sch
 
 # Fitter Assignments
 # ==================
@@ -56,7 +59,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (VHDL)"
 
 # Simulator Assignments
 # =====================
-set_global_assignment -name VECTOR_INPUT_SOURCE JK_RS_sch_wf.vwf
+set_global_assignment -name VECTOR_INPUT_SOURCE wv.vwf
 
 # ---------------------------------------
 # start EDA_TOOL_SETTINGS(eda_simulation)

@@ -34,12 +34,14 @@ set_global_assignment -name BDF_FILE DEMUL4_16_sch.bdf
 set_global_assignment -name VHDL_FILE MUL_3_8.vhd
 set_global_assignment -name VHDL_FILE decoder_4x16.vhd
 set_global_assignment -name BDF_FILE EL74138.bdf
+set_global_assignment -name BDF_FILE Decoder_6_64.bdf
+set_global_assignment -name VHDL_FILE decoder_6x64.vhd
 
 # Analysis & Synthesis Assignments
 # ================================
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
 set_global_assignment -name FAMILY Stratix
-set_global_assignment -name TOP_LEVEL_ENTITY MUL_3_8
+set_global_assignment -name TOP_LEVEL_ENTITY decoder_6x64
 
 # Fitter Assignments
 # ==================
@@ -53,6 +55,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (VHDL)"
 # Simulator Assignments
 # =====================
 set_global_assignment -name VECTOR_INPUT_SOURCE wf.vwf
+set_global_assignment -name END_TIME "10 us"
 
 # ---------------------------------------
 # start EDA_TOOL_SETTINGS(eda_simulation)
