@@ -45,6 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "N_ENB" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "N_ENB" (rect 21 75 59 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
 		(pt 96 32)
 		(output)
 		(text "Q0" (rect 0 0 16 14)(font "Arial" (font_size 8)))
