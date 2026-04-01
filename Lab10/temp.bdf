@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 768 56 944 72)
+	(rect 760 40 936 56)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "EVEN" (rect 90 0 119 12)(font "Arial" ))
 	(pt 0 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 768 -8 944 8)
+	(rect 760 -8 936 8)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Dout[7..0]" (rect 90 0 139 12)(font "Arial" ))
 	(pt 0 8)
@@ -100,79 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 240 16 360 112)
-	(text "Mod2_8b_sch" (rect 5 0 85 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "X[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "X[7..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "D" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "D" (rect 21 43 29 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "ODD" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "ODD" (rect 74 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32)(line_width 1))
-	)
-	(port
-		(pt 120 48)
-		(output)
-		(text "EVEN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "EVEN" (rect 68 43 99 57)(font "Arial" (font_size 8)))
-		(line (pt 120 48)(pt 104 48)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 104 80)(line_width 1))
-	)
-)
-(symbol
-	(rect 632 16 752 112)
-	(text "Mod2_8b_sch" (rect 5 0 85 14)(font "Arial" (font_size 8)))
-	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "X[7..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "X[7..0]" (rect 21 27 57 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "D" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "D" (rect 21 43 29 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "ODD" (rect 0 0 25 14)(font "Arial" (font_size 8)))
-		(text "ODD" (rect 74 27 99 41)(font "Arial" (font_size 8)))
-		(line (pt 120 32)(pt 104 32)(line_width 1))
-	)
-	(port
-		(pt 120 48)
-		(output)
-		(text "EVEN" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "EVEN" (rect 68 43 99 57)(font "Arial" (font_size 8)))
-		(line (pt 120 48)(pt 104 48)(line_width 1))
-	)
-	(drawing
-		(rectangle (rect 16 16 104 80)(line_width 1))
-	)
-)
-(symbol
-	(rect 208 80 240 112)
+	(rect 216 80 248 112)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 21 26 33)(font "Arial" )(invisible))
 	(port
@@ -238,51 +166,81 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 176 112)(line_width 1))
 	)
 )
-(connector
-	(pt 224 48)
-	(pt 224 8)
-	(bus)
+(symbol
+	(rect 248 16 360 112)
+	(text "mod2_8b_ctrl" (rect 5 0 71 12)(font "Arial" ))
+	(text "inst4" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X[7..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "X[7..0]" (rect 21 27 52 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "D" (rect 0 0 8 12)(font "Arial" ))
+		(text "D" (rect 21 43 29 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "EVEN" (rect 0 0 29 12)(font "Arial" ))
+		(text "EVEN" (rect 62 27 91 39)(font "Arial" ))
+		(line (pt 112 32)(pt 96 32)(line_width 1))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "ODD" (rect 0 0 24 12)(font "Arial" ))
+		(text "ODD" (rect 67 43 91 55)(font "Arial" ))
+		(line (pt 112 48)(pt 96 48)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 80)(line_width 1))
+	)
 )
-(connector
-	(pt 376 8)
-	(pt 224 8)
-	(bus)
-)
-(connector
-	(pt 208 48)
-	(pt 224 48)
-	(bus)
-)
-(connector
-	(pt 224 48)
-	(pt 240 48)
-	(bus)
-)
-(connector
-	(pt 224 64)
-	(pt 224 80)
-)
-(connector
-	(pt 240 64)
-	(pt 224 64)
-)
-(connector
-	(pt 376 8)
-	(pt 376 48)
-	(bus)
+(symbol
+	(rect 632 16 744 112)
+	(text "mod2_8b_ctrl" (rect 5 0 71 12)(font "Arial" ))
+	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X[7..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "X[7..0]" (rect 21 27 52 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "D" (rect 0 0 8 12)(font "Arial" ))
+		(text "D" (rect 21 43 29 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "EVEN" (rect 0 0 29 12)(font "Arial" ))
+		(text "EVEN" (rect 62 27 91 39)(font "Arial" ))
+		(line (pt 112 32)(pt 96 32)(line_width 1))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "ODD" (rect 0 0 24 12)(font "Arial" ))
+		(text "ODD" (rect 67 43 91 55)(font "Arial" ))
+		(line (pt 112 48)(pt 96 48)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 80)(line_width 1))
+	)
 )
 (connector
 	(pt 632 64)
 	(pt 600 64)
-)
-(connector
-	(pt 376 48)
-	(pt 408 48)
-	(bus)
-)
-(connector
-	(pt 360 64)
-	(pt 408 64)
 )
 (connector
 	(pt 208 136)
@@ -312,8 +270,27 @@ applicable agreement for further details.
 	(pt 408 80)
 )
 (connector
-	(pt 752 64)
-	(pt 768 64)
+	(pt 232 48)
+	(pt 232 8)
+	(bus)
+)
+(connector
+	(pt 208 48)
+	(pt 232 48)
+	(bus)
+)
+(connector
+	(pt 232 48)
+	(pt 248 48)
+	(bus)
+)
+(connector
+	(pt 232 64)
+	(pt 232 80)
+)
+(connector
+	(pt 248 64)
+	(pt 232 64)
 )
 (connector
 	(pt 616 48)
@@ -322,18 +299,50 @@ applicable agreement for further details.
 )
 (connector
 	(pt 616 0)
-	(pt 768 0)
+	(pt 760 0)
 	(bus)
 )
 (connector
-	(pt 632 48)
-	(pt 616 48)
-	(bus)
-)
-(connector
-	(pt 616 48)
 	(pt 600 48)
+	(pt 616 48)
 	(bus)
 )
-(junction (pt 224 48))
+(connector
+	(pt 616 48)
+	(pt 632 48)
+	(bus)
+)
+(connector
+	(pt 392 8)
+	(pt 392 48)
+	(bus)
+)
+(connector
+	(pt 408 48)
+	(pt 392 48)
+	(bus)
+)
+(connector
+	(pt 232 8)
+	(pt 392 8)
+	(bus)
+)
+(connector
+	(pt 376 48)
+	(pt 376 64)
+)
+(connector
+	(pt 376 64)
+	(pt 408 64)
+)
+(connector
+	(pt 744 48)
+	(pt 760 48)
+)
+(connector
+	(text "<<__$DEF_ALIAS78>>" (rect 368 32 480 44)(font "Arial" )(invisible))
+	(pt 360 48)
+	(pt 376 48)
+)
 (junction (pt 616 48))
+(junction (pt 232 48))
